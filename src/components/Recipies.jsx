@@ -47,7 +47,7 @@ export default function Recipies(name) {
     <>
       <div className="recipes grid grid-cols-1 gap-4 m-4 mb-15 md:grid-cols-4 md:gap-4 md:m-7 md:mb-15 ">
           {rec.map((i) => (
-            <div>
+            <div key={i.idMeal}>
               <Link href={`${name.name.category}/${i.idMeal}`}>
                 <Card className="hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
                     <CardHeader>
